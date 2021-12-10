@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    font-family: nunito;
+    background-color: #1b1b1b;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+aside{
+    /* flex-grow: 1; */
+    background-color: #2c2c2c;
+    height: 100vh;
+    width: 20%;
+  
+}
+
+aside > input{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#search{
+    padding: 5px;
+    margin-top: 80px;
+    width: 200px;
+    background-color: #2c2c2c;
+    border: 1px solid gray;
+    color: gray;   
+}
+
+#assign-btn{
+    background-color: rgb(70, 70, 70);
+    text-align: center;
+    color: #ffffff;
+    padding: 6px;
+    width: 220px;
+    border: none;
+    margin-top: 50px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#task-btn{
+    background-color: rgb(70, 70, 70);
+    align-content: center;
+    color: #ffffff;
+    padding: 6px;
+    width: 220px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+main{
+    flex-grow: 2;
+    background-color: #1b1b1b;
+    position: relative;
+}
+
+
+main >input{
+    left: 20%;
+    top: 40%;
+    width: 600px;
+    padding: 8px;
+    position: absolute;
+    background-color: rgb(70, 70, 70);
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    font-weight: 500;
+    /* outline: none; */
+    
+}
+
+
+
+/* ---MIDEA QUERY--- */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .wrapper{
+         display: flex;
+         flex-direction: column;
+         margin: auto;
+    }
+
+    aside{
+      
+        background-color: #2c2c2c;
+        height: 20vh;
+        width: 100%;
+        
+    }
+
+    #search{
+        margin-top: 50px;
+        display: inline-block;
+        width: 150px;
+        margin-left: 5px;
+    }
+
+    #assign-btn{
+        margin-top: 50px;
+        display: inline-block;
+        cursor: pointer;
+        width: 110px;
+        margin-left: 20px;
+    }
+
+    #task-btn{
+
+        margin-top: 50px;
+        display: inline-block;
+        cursor: pointer;
+        width: 60px;
+    }
+
+    main{
+        background-color: #1b1b1b;
+      
+    }
+    
+    main >input{
+        left: 20%;
+        margin-top: 200px;
+        width: 200px;
+        padding: 8px;
+        background-color: rgb(70, 70, 70);
+        border: none;
+        border-radius: 5px;
+        color: gray;
+        font-weight: 500;
+        /* outline: none; */
+        
+    }
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
